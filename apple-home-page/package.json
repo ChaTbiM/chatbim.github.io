@@ -1,0 +1,14 @@
+{
+  "name": "apple",
+  "version": "1.0.0",
+  "description": "apple home page 1",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.sass style.css -w"
+  },
+  "author": "ChaTbi Mustapha",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-dest": "^0.2.3"
+  }
+}

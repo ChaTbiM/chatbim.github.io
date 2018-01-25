@@ -1,0 +1,234 @@
+/* Variables */
+
+$gutter_vertical : 1.2rem
+$gutter_horizental : 1.2rem
+$max_cnt : 78vw
+
+$nav-color : rgba(0,0,0,.4)
+$main-text-black : rgb(51,51,51)
+
+/*    ///////////////               */
+
+// base 
+* ,*:after , *:before 
+    padding: 0
+    margin: 0
+    box-sizing: inherit
+    list-style: none
+    text-decoration: none
+
+html 
+    font-size: 62.5%
+    box-sizing: border-box
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
+
+body 
+    font-weight: 400
+    height: 200vh
+
+
+.navigation 
+    width: 100%
+    background-color: rgba(0,0,0,.8) 
+    position: fixed
+    
+    &__list
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        max-width: $max_cnt
+        &__item
+            align-self: center
+            padding: .2rem 0 
+            flex: 1 1 auto
+    
+            &__link
+                font-size: 1.4rem
+                letter-spacing: .1rem
+                
+                
+                
+               
+a               
+    color: white
+    opacity: .9
+    line-height: 3.1
+    
+.fa-apple    
+    font-size: 2.4rem
+.fa-search , .fa-shopping-bag 
+    font-size: 1.85rem
+
+.top__1 , .top__2 
+    height: 100%
+    margin: 0 auto
+    display: block
+    
+
+.top__1
+    background-color: #FAFAFA
+    text-align: center
+    &__text
+        padding-top: 14.5rem
+        &__h2
+            font-size: 5.4rem
+        &__h3
+            font-size: 2.9rem
+            font-weight: 200
+    &__img
+        padding-top: calc(28vh - 8rem)
+        width: auto
+        height: auto
+        max-width: 100%
+        
+        
+
+.top__2
+    background-color: #F9F0EB
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    margin-top: $gutter_vertical
+    
+    &__text
+        display: block
+        padding-top: 2.3rem
+        &__h2
+            font-size: 5.4rem
+        &__h3
+            font-size: 2.9rem
+            font-weight: 200
+            padding-top: .9rem
+    &__img
+        padding-top: 4.1rem
+        width: auto
+        height: auto
+        max-width: 100%
+        
+.grid
+    &__bottom
+        display: flex
+        width: calc( 100vw - 2.4rem)
+        margin: #{$gutter_vertical} auto 0
+        &__left
+            
+            width: calc(50vw - 2.4rem)
+            margin: 0 auto
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            
+            
+            &::before
+                width: 1px
+                margin-left: -1px
+                padding-top: 580px / 592px * 100%
+            &__inside
+                font-size: 2.8vw
+                text-align: left
+                padding-left: 2rem
+                
+
+    
+        &__right
+            width: calc(50vw - 2.4rem)
+            margin: 0 auto
+            background-color: yellow
+            width: calc(50vw - 2.4rem)
+            margin: 0 auto
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            
+            
+            &::before
+                content: ""
+                width: 1px
+                margin-left: -1px
+                padding-top: 580px / 592px * 100%
+            &__inside
+                font-size: 2.8vw
+                text-align: left
+                padding-right: 2rem
+    
+    
+    &__top
+        display: flex
+        width: calc( 100vw - 2.4rem)
+        margin: #{$gutter_vertical} auto 0
+        
+        &__left
+            width: calc(50vw - 2.4rem)
+            margin: 0 auto
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            &::before
+                content: ""
+                width: 1px
+                margin-left: -1px
+                padding-top: 580px / 592px * 100%
+            &__inside
+                font-size: 3.6vw
+                padding-top: 2rem
+                text-align: center
+    
+        &__right
+            width: calc(50vw - 2.4rem)
+            margin: 0 auto
+            background-color: yellow
+            width: calc(50vw - 2.4rem)
+            margin: 0 auto
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            &::before
+                content: ""
+                width: 1px
+                margin-left: -1px
+                padding-top: 580px / 592px * 100%
+            &__inside
+                font-size: 3.6vw
+                text-align: center
+                padding-bottom: 2rem
+                
+
+.grid__top__left , .grid__top__right , .grid__bottom__left , .grid__bottom__right
+    background-image: url(http://www.mulierchile.com/apple-background/apple-background-005.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+
+.wrp__footer
+    max-width: $max_cnt 
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    flex-wrap: no-wrap
+    padding: $gutter_horizental*4 0 $gutter_horizental 
+    font-size: 1.1rem
+    font-size: 2vw
+
+.footer 
+    width: 100%
+    background-color: #F2F2F2
+    margin: $gutter_vertical 0 0 0 
+    
+    &__1
+
+    &__2
+        
+        
+    &__3
+        
+    &__4
+        
+    &__5
+       
+    
+    
+
+footer a   
+    color: black

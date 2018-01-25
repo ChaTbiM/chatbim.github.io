@@ -1,0 +1,187 @@
+/* Variables */
+/*    ///////////////               */
+*, *:after, *:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; }
+
+body {
+  font-weight: 400;
+  height: 200vh; }
+
+.navigation {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed; }
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 78vw; }
+    .navigation__list__item {
+      align-self: center;
+      padding: .2rem 0;
+      flex: 1 1 auto; }
+      .navigation__list__item__link {
+        font-size: 1.4rem;
+        letter-spacing: .1rem; }
+
+a {
+  color: white;
+  opacity: .9;
+  line-height: 3.1; }
+
+.fa-apple {
+  font-size: 2.4rem; }
+
+.fa-search, .fa-shopping-bag {
+  font-size: 1.85rem; }
+
+.top__1, .top__2 {
+  height: 100%;
+  margin: 0 auto;
+  display: block; }
+
+.top__1 {
+  background-color: #FAFAFA;
+  text-align: center; }
+  .top__1__text {
+    padding-top: 14.5rem; }
+    .top__1__text__h2 {
+      font-size: 5.4rem; }
+    .top__1__text__h3 {
+      font-size: 2.9rem;
+      font-weight: 200; }
+  .top__1__img {
+    padding-top: calc(28vh - 8rem);
+    width: auto;
+    height: auto;
+    max-width: 100%; }
+
+.top__2 {
+  background-color: #F9F0EB;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 1.2rem; }
+  .top__2__text {
+    display: block;
+    padding-top: 2.3rem; }
+    .top__2__text__h2 {
+      font-size: 5.4rem; }
+    .top__2__text__h3 {
+      font-size: 2.9rem;
+      font-weight: 200;
+      padding-top: .9rem; }
+  .top__2__img {
+    padding-top: 4.1rem;
+    width: auto;
+    height: auto;
+    max-width: 100%; }
+
+.grid__bottom {
+  display: flex;
+  width: calc( 100vw - 2.4rem);
+  margin: 1.2rem auto 0; }
+  .grid__bottom__left {
+    width: calc(50vw - 2.4rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .grid__bottom__left::before {
+      width: 1px;
+      margin-left: -1px;
+      padding-top: 97.97297%; }
+    .grid__bottom__left__inside {
+      font-size: 2.8vw;
+      text-align: left;
+      padding-left: 2rem; }
+  .grid__bottom__right {
+    width: calc(50vw - 2.4rem);
+    margin: 0 auto;
+    background-color: yellow;
+    width: calc(50vw - 2.4rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .grid__bottom__right::before {
+      content: "";
+      width: 1px;
+      margin-left: -1px;
+      padding-top: 97.97297%; }
+    .grid__bottom__right__inside {
+      font-size: 2.8vw;
+      text-align: left;
+      padding-right: 2rem; }
+
+.grid__top {
+  display: flex;
+  width: calc( 100vw - 2.4rem);
+  margin: 1.2rem auto 0; }
+  .grid__top__left {
+    width: calc(50vw - 2.4rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    .grid__top__left::before {
+      content: "";
+      width: 1px;
+      margin-left: -1px;
+      padding-top: 97.97297%; }
+    .grid__top__left__inside {
+      font-size: 3.6vw;
+      padding-top: 2rem;
+      text-align: center; }
+  .grid__top__right {
+    width: calc(50vw - 2.4rem);
+    margin: 0 auto;
+    background-color: yellow;
+    width: calc(50vw - 2.4rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .grid__top__right::before {
+      content: "";
+      width: 1px;
+      margin-left: -1px;
+      padding-top: 97.97297%; }
+    .grid__top__right__inside {
+      font-size: 3.6vw;
+      text-align: center;
+      padding-bottom: 2rem; }
+
+.grid__top__left, .grid__top__right, .grid__bottom__left, .grid__bottom__right {
+  background-image: url(http://www.mulierchile.com/apple-background/apple-background-005.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.wrp__footer {
+  max-width: 78vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  padding: 4.8rem 0 1.2rem;
+  font-size: 1.1rem;
+  font-size: 2vw; }
+
+.footer {
+  width: 100%;
+  background-color: #F2F2F2;
+  margin: 1.2rem 0 0 0; }
+
+footer a {
+  color: black; }
