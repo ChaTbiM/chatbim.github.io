@@ -2,7 +2,7 @@
 
 $gutter_vertical : 1.2rem
 $gutter_horizental : 1.2rem
-$max_cnt : 78vw
+$max_cnt : 73vw
 
 $nav-color : rgba(0,0,0,.4)
 $main-text-black : rgb(51,51,51)
@@ -202,14 +202,15 @@ a
 
 
 .wrp__footer
-    max-width: $max_cnt 
+    max-width: $max_cnt + 2vw 
     margin: 0 auto
     display: flex
     justify-content: space-between
     flex-wrap: no-wrap
-    padding: $gutter_horizental*4 0 $gutter_horizental 
+    padding: $gutter_horizental*3 0 $gutter_horizental 
     font-size: 1.1rem
-    font-size: 2vw
+    font-weight: light
+    
 
 .footer 
     width: 100%
@@ -217,7 +218,7 @@ a
     margin: $gutter_vertical 0 0 0 
     
     &__1
-
+       
     &__2
         
         
@@ -226,9 +227,57 @@ a
     &__4
         
     &__5
-       
-    
+
+
+
+.footer__link
+    display: inline-block
+    height: 2.3rem
     
 
 footer a   
     color: black
+    &:hover
+        text-decoration: underline
+
+.footer__4__bottom , .footer__3__bottom 
+    padding-top: 2.3rem
+
+.footer__last
+    max-width: $max_cnt + 2vw
+    margin: 0 auto
+
+    &__top
+        padding-top: 1.5rem
+        border-bottom: 1px solid #ccc
+
+        
+    &__bottom
+        width: 100%
+        
+        &__copyright
+            width: 30%
+            display: inline-block
+            padding: .3rem 2rem 2rem 0
+        &__nav
+            display: inline-block
+            width: 69%
+            position: relative
+            
+            &__list
+                display: inline-block
+
+                &__item
+                    display: inline-block
+                    padding: .3rem .9rem
+
+#last__right                 
+    position: absolute
+    right: 0
+    top: 0             
+                       
+                        
+
+
+.footer__last__top__link
+    color: blue
