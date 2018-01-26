@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 78vw; }
+    max-width: 73vw; }
     .navigation__list__item {
       align-self: center;
       padding: .2rem 0;
@@ -169,19 +169,58 @@ a {
   background-position: center; }
 
 .wrp__footer {
-  max-width: 78vw;
+  max-width: 75vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: no-wrap;
-  padding: 4.8rem 0 1.2rem;
+  padding: 3.6rem 0 1.2rem;
   font-size: 1.1rem;
-  font-size: 2vw; }
+  font-weight: light; }
 
 .footer {
   width: 100%;
   background-color: #F2F2F2;
   margin: 1.2rem 0 0 0; }
 
+.footer__link {
+  display: inline-block;
+  height: 2.3rem; }
+
 footer a {
   color: black; }
+  footer a:hover {
+    text-decoration: underline; }
+
+.footer__4__bottom, .footer__3__bottom {
+  padding-top: 2.3rem; }
+
+.footer__last {
+  max-width: 75vw;
+  margin: 0 auto; }
+  .footer__last__top {
+    padding-top: 1.5rem;
+    border-bottom: 1px solid #ccc; }
+  .footer__last__bottom {
+    width: 100%; }
+    .footer__last__bottom__copyright {
+      width: 30%;
+      display: inline-block;
+      padding: .3rem 2rem 2rem 0; }
+    .footer__last__bottom__nav {
+      display: inline-block;
+      width: 69%;
+      position: relative; }
+      .footer__last__bottom__nav__list {
+        display: inline-block; }
+        .footer__last__bottom__nav__list__item {
+          display: inline-block;
+          padding: .3rem .9rem; }
+
+#last__right {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.footer__last__top__link {
+  color: blue; }
