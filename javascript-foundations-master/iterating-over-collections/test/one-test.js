@@ -9,13 +9,13 @@ describe('iteratorFactory', function() {
     assert.equal(typeof factory, "object");
   });
 
-  it.skip('has a prototype function called `sum`', function() {
+  it('has a prototype function called `sum`', function() {
     var factory = new iteratorFactory();
 
     assert.equal(typeof factory.sum, 'function');
   });
 
-  it.skip('can sum a collection of integers', function() {
+  it('can sum a collection of integers', function() {
     var factory = new iteratorFactory();
 
     assert.equal(factory.sum([1, 2, 3, 4, 5]), 15);
@@ -23,7 +23,7 @@ describe('iteratorFactory', function() {
     assert.equal(factory.sum([10, 20, 30, 40, 50]), 150);
   });
 
-  it.skip('can sum a collection of strings', function() {
+  it('can sum a collection of strings', function() {
     var factory = new iteratorFactory();
 
     assert.equal(factory.sum(["one, ", "two, ", "three"]), "one, two, three");
@@ -31,7 +31,7 @@ describe('iteratorFactory', function() {
     assert.equal(factory.sum(["hey, ", "what's ", "up", "?"]), "hey, what's up?");
   });
 
-  it.skip('can sum a collection of integers and then square the sum', function() {
+  it('can sum a collection of integers and then square the sum', function() {
     var factory = new iteratorFactory();
 
     assert.equal(factory.sumAndSquare([1, 2, 3, 4, 5]), 225);
