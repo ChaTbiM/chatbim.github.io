@@ -1,0 +1,75 @@
+*,
+h1,
+h2,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+#root {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.app {
+	flex-basis: 27%;
+}
+
+.results {
+	text-align: right;
+	color: white;
+
+	border: solid 0.5px red;
+	padding: 0.75rem 1rem;
+	background-color: #433437;
+}
+
+.main {
+	display: flex;
+	flex-direction: row;
+
+	text-align: center;
+}
+
+.main__left {
+	flex-basis: 65%;
+	height: 100%;
+}
+
+.main__right {
+	flex-basis: 35%;
+}
+
+.main__left__number {
+	display: inline-flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+
+	width: 100%;
+}
+
+.number {
+	flex-basis: calc(100% / 3 - 1rem);
+}
+
+.cell {
+	padding: 0.5rem;
+	font-size: 1.5em;
+}
+
+.grey {
+	background-color: #eee;
+	color: black;
+}
+
+.clear {
+	color: grey;
+}
+
+.red {
+	background-color: red;
+	color: white;
+	font-size: 1.5rem;
+}
